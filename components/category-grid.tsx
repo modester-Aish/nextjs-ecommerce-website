@@ -29,6 +29,18 @@ const categories = [
     image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1012&auto=format&fit=crop",
     count: 76,
   },
+  {
+    id: "women",
+    name: "Women",
+    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=986&auto=format&fit=crop",
+    count: 153,
+  },
+  {
+    id: "accessories",
+    name: "Accessories",
+    image: "https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=987&auto=format&fit=crop",
+    count: 86,
+  },
 ]
 
 export default function CategoryGrid() {
