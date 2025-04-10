@@ -51,7 +51,7 @@ export default function CategoryGrid() {
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 category-card-overlay p-6 flex flex-col justify-end text-center"> {/* Added text-center */}
+              <div className="absolute inset-0 category-card-overlay p-6 flex flex-col justify-center text-center"> {/* Added text-center */}
                 <h3 className="text-xl font-semibold text-white">{category.name}</h3>
                 <p className="text-white/80 text-sm">{category.count} products</p>
               </div>
