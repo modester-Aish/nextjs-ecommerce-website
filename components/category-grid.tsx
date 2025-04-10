@@ -29,23 +29,12 @@ const categories = [
     image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1012&auto=format&fit=crop",
     count: 76,
   },
-  {
-    id: "women",
-    name: "Women",
-    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=986&auto=format&fit=crop",
-    count: 153,
-  },
-  {
-    id: "accessories",
-    name: "Accessories",
-    image: "https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=987&auto=format&fit=crop",
-    count: 86,
-  },
+  
 ]
 
 export default function CategoryGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center"> {/* Added justify-center */}
+    <div className="grid grid-rows-1 md:grid-rows-2 gap-6 justify-center"> {/* Added justify-center */}
       {categories.map((category, index) => (
         <motion.div
           key={category.id}
