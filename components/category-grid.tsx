@@ -33,7 +33,7 @@ const categories = [
 
 export default function CategoryGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center"> {/* Added justify-center */}
       {categories.map((category, index) => (
         <motion.div
           key={category.id}
@@ -50,7 +50,7 @@ export default function CategoryGrid() {
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 category-card-overlay p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 category-card-overlay p-6 flex flex-col justify-end text-center"> {/* Added text-center */}
                 <h3 className="text-xl font-semibold text-white">{category.name}</h3>
                 <p className="text-white/80 text-sm">{category.count} products</p>
               </div>
