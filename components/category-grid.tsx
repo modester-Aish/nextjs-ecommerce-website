@@ -34,7 +34,7 @@ const categories = [
 
 export default function CategoryGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 justify-center item-center"> {/* Added justify-center */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center item-center"> {/* Added justify-center */}
       {categories.map((category, index) => (
         <motion.div
           key={category.id}
